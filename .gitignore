@@ -1,0 +1,6 @@
+# User specific project files
+BuckleUp.xcodeproj/project.xcworkspace/xcuserdata/martin.xcuserdatad/UserInterfaceState.xcuserstate
+BuckleUp.xcodeproj/xcuserdata
+
+# Mac OS X specific trash
+.DS_Store
