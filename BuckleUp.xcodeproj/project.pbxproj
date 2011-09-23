@@ -13,6 +13,8 @@
 		5B42035B142CC42E00FB46AB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5B420359142CC42E00FB46AB /* Credits.rtf */; };
 		5B42035E142CC42E00FB46AB /* BuckleUpAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B42035D142CC42E00FB46AB /* BuckleUpAppDelegate.m */; };
 		5B420361142CC42E00FB46AB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B42035F142CC42E00FB46AB /* MainMenu.xib */; };
+		5B420373142CCDD100FB46AB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5B420371142CCDD100FB46AB /* LICENSE */; };
+		5B420376142CCE0B00FB46AB /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 5B420375142CCE0B00FB46AB /* README.markdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		5B42035C142CC42E00FB46AB /* BuckleUpAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuckleUpAppDelegate.h; sourceTree = "<group>"; };
 		5B42035D142CC42E00FB46AB /* BuckleUpAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuckleUpAppDelegate.m; sourceTree = "<group>"; };
 		5B420360142CC42E00FB46AB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5B420371142CCDD100FB46AB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5B420375142CCE0B00FB46AB /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 				5B420350142CC42E00FB46AB /* BuckleUp */,
 				5B420349142CC42E00FB46AB /* Frameworks */,
 				5B420347142CC42E00FB46AB /* Products */,
+				5B420370142CCDA200FB46AB /* Miscellaneous Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +107,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5B420370142CCDA200FB46AB /* Miscellaneous Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B420375142CCE0B00FB46AB /* README.markdown */,
+				5B420371142CCDD100FB46AB /* LICENSE */,
+			);
+			name = "Miscellaneous Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +166,8 @@
 				5B420355142CC42E00FB46AB /* InfoPlist.strings in Resources */,
 				5B42035B142CC42E00FB46AB /* Credits.rtf in Resources */,
 				5B420361142CC42E00FB46AB /* MainMenu.xib in Resources */,
+				5B420373142CCDD100FB46AB /* LICENSE in Resources */,
+				5B420376142CCE0B00FB46AB /* README.markdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +299,7 @@
 				5B420366142CC42E00FB46AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
