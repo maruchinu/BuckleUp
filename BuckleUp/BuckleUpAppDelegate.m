@@ -18,13 +18,31 @@
 
 #import "BuckleUpAppDelegate.h"
 
+#import "BUSandboxConfig.h"
+#import "BUConfigItems.h"
+
 @implementation BuckleUpAppDelegate
 
 @synthesize window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    // Test code below...
+    
+    BUVersion* version = [[BUVersion alloc] init];
+    
+    BUSandboxConfig* config = [[BUSandboxConfig alloc] initWithVersion:version];
+    
+    BUDefaultOperation* defaultOperation = [[BUDefaultOperation alloc] init];
+    
+    BUAllowAction* allowAction = [[BUAllowAction alloc] initWithOperation:defaultOperation];
+    
+    [config addAction:allowAction];
+    
+    NSLog(@"\n\n%@\n", [config configString]);
+    
+    // Quit the application
+    [NSApp performSelector:@selector(terminate:) withObject:nil afterDelay:0.0];
 }
 
 @end
