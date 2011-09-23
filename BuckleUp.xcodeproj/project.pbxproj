@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B42034B142CC42E00FB46AB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B42034A142CC42E00FB46AB /* Cocoa.framework */; };
+		5B420355142CC42E00FB46AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B420353142CC42E00FB46AB /* InfoPlist.strings */; };
+		5B420357142CC42E00FB46AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B420356142CC42E00FB46AB /* main.m */; };
+		5B42035B142CC42E00FB46AB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5B420359142CC42E00FB46AB /* Credits.rtf */; };
+		5B42035E142CC42E00FB46AB /* BuckleUpAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B42035D142CC42E00FB46AB /* BuckleUpAppDelegate.m */; };
+		5B420361142CC42E00FB46AB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B42035F142CC42E00FB46AB /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B420346142CC42E00FB46AB /* BuckleUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuckleUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B42034A142CC42E00FB46AB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5B42034D142CC42E00FB46AB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5B42034E142CC42E00FB46AB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5B42034F142CC42E00FB46AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5B420352142CC42E00FB46AB /* BuckleUp-Info.plist */ = {isa = PBXFileReference; path = "BuckleUp-Info.plist"; sourceTree = "<group>"; };
+		5B420354142CC42E00FB46AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5B420356142CC42E00FB46AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5B420358142CC42E00FB46AB /* BuckleUp-Prefix.pch */ = {isa = PBXFileReference; path = "BuckleUp-Prefix.pch"; sourceTree = "<group>"; };
+		5B42035A142CC42E00FB46AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5B42035C142CC42E00FB46AB /* BuckleUpAppDelegate.h */ = {isa = PBXFileReference; path = BuckleUpAppDelegate.h; sourceTree = "<group>"; };
+		5B42035D142CC42E00FB46AB /* BuckleUpAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuckleUpAppDelegate.m; sourceTree = "<group>"; };
+		5B420360142CC42E00FB46AB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B420343142CC42E00FB46AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B42034B142CC42E00FB46AB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B42033B142CC42E00FB46AB = {
+			isa = PBXGroup;
+			children = (
+				5B420350142CC42E00FB46AB /* BuckleUp */,
+				5B420349142CC42E00FB46AB /* Frameworks */,
+				5B420347142CC42E00FB46AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B420347142CC42E00FB46AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B420346142CC42E00FB46AB /* BuckleUp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B420349142CC42E00FB46AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B42034A142CC42E00FB46AB /* Cocoa.framework */,
+				5B42034C142CC42E00FB46AB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B42034C142CC42E00FB46AB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B42034D142CC42E00FB46AB /* AppKit.framework */,
+				5B42034E142CC42E00FB46AB /* CoreData.framework */,
+				5B42034F142CC42E00FB46AB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5B420350142CC42E00FB46AB /* BuckleUp */ = {
+			isa = PBXGroup;
+			children = (
+				5B42035C142CC42E00FB46AB /* BuckleUpAppDelegate.h */,
+				5B42035D142CC42E00FB46AB /* BuckleUpAppDelegate.m */,
+				5B42035F142CC42E00FB46AB /* MainMenu.xib */,
+				5B420351142CC42E00FB46AB /* Supporting Files */,
+			);
+			path = BuckleUp;
+			sourceTree = "<group>";
+		};
+		5B420351142CC42E00FB46AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B420352142CC42E00FB46AB /* BuckleUp-Info.plist */,
+				5B420353142CC42E00FB46AB /* InfoPlist.strings */,
+				5B420356142CC42E00FB46AB /* main.m */,
+				5B420358142CC42E00FB46AB /* BuckleUp-Prefix.pch */,
+				5B420359142CC42E00FB46AB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B420345142CC42E00FB46AB /* BuckleUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B420364142CC42E00FB46AB /* Build configuration list for PBXNativeTarget "BuckleUp" */;
+			buildPhases = (
+				5B420342142CC42E00FB46AB /* Sources */,
+				5B420343142CC42E00FB46AB /* Frameworks */,
+				5B420344142CC42E00FB46AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuckleUp;
+			productName = BuckleUp;
+			productReference = 5B420346142CC42E00FB46AB /* BuckleUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B42033D142CC42E00FB46AB /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5B420340142CC42E00FB46AB /* Build configuration list for PBXProject "BuckleUp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5B42033B142CC42E00FB46AB;
+			productRefGroup = 5B420347142CC42E00FB46AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B420345142CC42E00FB46AB /* BuckleUp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B420344142CC42E00FB46AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B420355142CC42E00FB46AB /* InfoPlist.strings in Resources */,
+				5B42035B142CC42E00FB46AB /* Credits.rtf in Resources */,
+				5B420361142CC42E00FB46AB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B420342142CC42E00FB46AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B420357142CC42E00FB46AB /* main.m in Sources */,
+				5B42035E142CC42E00FB46AB /* BuckleUpAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B420353142CC42E00FB46AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B420354142CC42E00FB46AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5B420359142CC42E00FB46AB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B42035A142CC42E00FB46AB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5B42035F142CC42E00FB46AB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B420360142CC42E00FB46AB /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B420362142CC42E00FB46AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5B420363142CC42E00FB46AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5B420365142CC42E00FB46AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BuckleUp/BuckleUp-Prefix.pch";
+				INFOPLIST_FILE = "BuckleUp/BuckleUp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5B420366142CC42E00FB46AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BuckleUp/BuckleUp-Prefix.pch";
+				INFOPLIST_FILE = "BuckleUp/BuckleUp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B420340142CC42E00FB46AB /* Build configuration list for PBXProject "BuckleUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B420362142CC42E00FB46AB /* Debug */,
+				5B420363142CC42E00FB46AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B420364142CC42E00FB46AB /* Build configuration list for PBXNativeTarget "BuckleUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B420365142CC42E00FB46AB /* Debug */,
+				5B420366142CC42E00FB46AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B42033D142CC42E00FB46AB /* Project object */;
+}
