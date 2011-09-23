@@ -5,7 +5,7 @@ BuckleUp is a GUI for interfacing with the sandbox-exec command in Mac OS X (int
 The sandbox feature in Mac OS X is referred to as "Seatbelt" (seatbelt.kext) by Apple, therefore the name BuckleUp.
 
 All information about the structure of the seatbelt config strings/files is taken from the awesome Apple Sandbox Guide v1.0 from fG!
-You can get the PDF explained all the bits and bolts here: http://reverse.put.as/2011/09/14/apple-sandbox-guide-v1-0/
+You can get the PDF explaining all the bits and bolts here: http://reverse.put.as/2011/09/14/apple-sandbox-guide-v1-0/
 Thanks for making such a guide and sharing it with us!
 
 More to follow...
