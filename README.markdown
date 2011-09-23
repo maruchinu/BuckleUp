@@ -1,10 +1,16 @@
 # Introduction
 
-BuckleUp is a GUI for creating config files for the sandbox-exec command in Mac OS X (introduced in 10.5 Leopard). The command can be used to launch a program and limiting it's capabilities to those that are specified in the sandbox config (entitlements).
+BuckleUp is a GUI for interfacing with the sandbox-exec command in Mac OS X (introduced in 10.5 Leopard). The command can be used to launch a program and limiting it's capabilities to those that are specified in the sandbox config (entitlements).
 
 The sandbox feature in Mac OS X is referred to as "Seatbelt" (seatbelt.kext) by Apple, therefore the name BuckleUp.
 
+All information about the structure of the seatbelt config strings/files is taken from the awesome Apple Sandbox Guide v1.0 from fG!
+You can get the PDF explained all the bits and bolts here: http://reverse.put.as/2011/09/14/apple-sandbox-guide-v1-0/
+Thanks for making such a guide and sharing it with us!
+
 More to follow...
+
+# 
 
 # Copyright & License
 
