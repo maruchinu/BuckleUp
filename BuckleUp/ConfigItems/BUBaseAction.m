@@ -38,4 +38,12 @@
     return [NSString stringWithFormat:@"(%@ %@)", actionName, [operation configString]];
 }
 
+#pragma mark -
+#pragma mark Convenience Methods
+
++ (BUBaseAction *)action
+{
+    return [[[self alloc] init] autorelease];
+}
+
 @end

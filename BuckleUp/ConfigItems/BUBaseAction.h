@@ -32,4 +32,6 @@
 
 - (id)initWithOperation: (BUBaseOperation*)operation;
 
++ (BUBaseAction*) action;
+
 @end

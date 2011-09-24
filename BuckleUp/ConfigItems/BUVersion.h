@@ -25,4 +25,6 @@
     @protected
     NSInteger versionNumber;
 }
+
++ (BUVersion*) version;
 @end

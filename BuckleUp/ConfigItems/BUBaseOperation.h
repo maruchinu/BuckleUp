@@ -27,4 +27,6 @@
     NSString* operationName;
 }
 
++ (BUBaseOperation*) operation;
+
 @end

@@ -58,7 +58,15 @@
         [config appendFormat:@"%@\n", [configItem configString]];
     }
     
-    return config;
+    return [config autorelease];
+}
+
+#pragma mark -
+#pragma mark Convenience Methods
+
++ (BUSandboxConfig *)configWithVersion:(BUVersion *)version
+{
+    return [[[self alloc] initWithVersion:version] autorelease];
 }
 
 @end

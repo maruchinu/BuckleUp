@@ -32,4 +32,5 @@
 
 - (void) addAction: (BUBaseAction<BUConfigItemProtocol>*)action;
 
++ (BUSandboxConfig*) configWithVersion: (BUVersion*)version;
 @end

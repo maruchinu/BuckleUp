@@ -38,4 +38,12 @@
     return [NSString stringWithFormat:@"(version %d)", versionNumber];
 }
 
+#pragma mark -
+#pragma mark Convenience Methods
+
++ (BUVersion *)version
+{
+    return [[[self alloc] init] autorelease];
+}
+
 @end
