@@ -15,13 +15,12 @@
 		5B420361142CC42E00FB46AB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B42035F142CC42E00FB46AB /* MainMenu.xib */; };
 		5B420373142CCDD100FB46AB /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5B420371142CCDD100FB46AB /* LICENSE */; };
 		5B420376142CCE0B00FB46AB /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 5B420375142CCE0B00FB46AB /* README.markdown */; };
-		5BA29316142D10D4000DE520 /* BUBaseAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA29315142D10D4000DE520 /* BUBaseAction.m */; };
-		5BA29319142D121D000DE520 /* BUAllowAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA29318142D121D000DE520 /* BUAllowAction.m */; };
-		5BA2931C142D1242000DE520 /* BUDenyAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA2931B142D1242000DE520 /* BUDenyAction.m */; };
+		5BA29316142D10D4000DE520 /* BUAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA29315142D10D4000DE520 /* BUAction.m */; };
 		5BA29325142D16A6000DE520 /* BUVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA29324142D16A6000DE520 /* BUVersion.m */; };
-		5BA29329142D1915000DE520 /* BUDefaultOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA29328142D1915000DE520 /* BUDefaultOperation.m */; };
 		5BA2932C142D19C0000DE520 /* BUSandboxConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA2932B142D19C0000DE520 /* BUSandboxConfig.m */; };
-		5BA29336142D237B000DE520 /* BUBaseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA29335142D237B000DE520 /* BUBaseOperation.m */; };
+		5BA29336142D237B000DE520 /* BUOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA29335142D237B000DE520 /* BUOperation.m */; };
+		5BD3F399142E2DEB00CC7670 /* BUExecutableLauncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD3F398142E2DEB00CC7670 /* BUExecutableLauncher.m */; };
+		5BD3F39F142E527A00CC7670 /* BUToolbarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BD3F39E142E527A00CC7670 /* BUToolbarDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,24 +40,18 @@
 		5B420371142CCDD100FB46AB /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		5B420375142CCE0B00FB46AB /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		5BA29311142D106F000DE520 /* BUConfigItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUConfigItem.h; path = Protocols/BUConfigItem.h; sourceTree = "<group>"; };
-		5BA29314142D10D4000DE520 /* BUBaseAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUBaseAction.h; path = ConfigItems/BUBaseAction.h; sourceTree = "<group>"; };
-		5BA29315142D10D4000DE520 /* BUBaseAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUBaseAction.m; path = ConfigItems/BUBaseAction.m; sourceTree = "<group>"; };
-		5BA29317142D121D000DE520 /* BUAllowAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUAllowAction.h; path = ConfigItems/BUAllowAction.h; sourceTree = "<group>"; };
-		5BA29318142D121D000DE520 /* BUAllowAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUAllowAction.m; path = ConfigItems/BUAllowAction.m; sourceTree = "<group>"; };
-		5BA2931A142D1242000DE520 /* BUDenyAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUDenyAction.h; path = ConfigItems/BUDenyAction.h; sourceTree = "<group>"; };
-		5BA2931B142D1242000DE520 /* BUDenyAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUDenyAction.m; path = ConfigItems/BUDenyAction.m; sourceTree = "<group>"; };
+		5BA29314142D10D4000DE520 /* BUAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUAction.h; path = ConfigItems/BUAction.h; sourceTree = "<group>"; };
+		5BA29315142D10D4000DE520 /* BUAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUAction.m; path = ConfigItems/BUAction.m; sourceTree = "<group>"; };
 		5BA29323142D16A6000DE520 /* BUVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUVersion.h; path = ConfigItems/BUVersion.h; sourceTree = "<group>"; };
 		5BA29324142D16A6000DE520 /* BUVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUVersion.m; path = ConfigItems/BUVersion.m; sourceTree = "<group>"; };
-		5BA29327142D1915000DE520 /* BUDefaultOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUDefaultOperation.h; path = ConfigItems/BUDefaultOperation.h; sourceTree = "<group>"; };
-		5BA29328142D1915000DE520 /* BUDefaultOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUDefaultOperation.m; path = ConfigItems/BUDefaultOperation.m; sourceTree = "<group>"; };
 		5BA2932A142D19BF000DE520 /* BUSandboxConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUSandboxConfig.h; sourceTree = "<group>"; };
 		5BA2932B142D19C0000DE520 /* BUSandboxConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUSandboxConfig.m; sourceTree = "<group>"; };
-		5BA29330142D220E000DE520 /* BUOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUOperations.h; path = ConfigItems/BUOperations.h; sourceTree = "<group>"; };
-		5BA29331142D2225000DE520 /* BUActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUActions.h; path = ConfigItems/BUActions.h; sourceTree = "<group>"; };
-		5BA29332142D2238000DE520 /* BUConfigItems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUConfigItems.h; path = ConfigItems/BUConfigItems.h; sourceTree = "<group>"; };
-		5BA29333142D2258000DE520 /* BUVersions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUVersions.h; path = ConfigItems/BUVersions.h; sourceTree = "<group>"; };
-		5BA29334142D237B000DE520 /* BUBaseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUBaseOperation.h; path = ConfigItems/BUBaseOperation.h; sourceTree = "<group>"; };
-		5BA29335142D237B000DE520 /* BUBaseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUBaseOperation.m; path = ConfigItems/BUBaseOperation.m; sourceTree = "<group>"; };
+		5BA29334142D237B000DE520 /* BUOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BUOperation.h; path = ConfigItems/BUOperation.h; sourceTree = "<group>"; };
+		5BA29335142D237B000DE520 /* BUOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BUOperation.m; path = ConfigItems/BUOperation.m; sourceTree = "<group>"; };
+		5BD3F397142E2DEB00CC7670 /* BUExecutableLauncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUExecutableLauncher.h; sourceTree = "<group>"; };
+		5BD3F398142E2DEB00CC7670 /* BUExecutableLauncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUExecutableLauncher.m; sourceTree = "<group>"; };
+		5BD3F39D142E527A00CC7670 /* BUToolbarDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BUToolbarDelegate.h; sourceTree = "<group>"; };
+		5BD3F39E142E527A00CC7670 /* BUToolbarDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BUToolbarDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +106,10 @@
 		5B420350142CC42E00FB46AB /* BuckleUp */ = {
 			isa = PBXGroup;
 			children = (
+				5BD3F39C142E525000CC7670 /* GUI */,
 				5BA29313142D10AA000DE520 /* ConfigItems */,
 				5BA29312142D1075000DE520 /* Protocols */,
+				5BD3F39B142E2E5200CC7670 /* Launcher */,
 				5BA2932A142D19BF000DE520 /* BUSandboxConfig.h */,
 				5BA2932B142D19C0000DE520 /* BUSandboxConfig.m */,
 				5B42035C142CC42E00FB46AB /* BuckleUpAppDelegate.h */,
@@ -157,72 +152,32 @@
 		5BA29313142D10AA000DE520 /* ConfigItems */ = {
 			isa = PBXGroup;
 			children = (
-				5BA2932E142D21BD000DE520 /* Headers */,
-				5BA2931D142D12A2000DE520 /* Actions */,
-				5BA2931F142D1430000DE520 /* Filters */,
-				5BA29320142D1436000DE520 /* Modifiers */,
-				5BA2931E142D1429000DE520 /* Operations */,
-				5BA29322142D166B000DE520 /* Versions */,
+				5BA29314142D10D4000DE520 /* BUAction.h */,
+				5BA29315142D10D4000DE520 /* BUAction.m */,
+				5BA29334142D237B000DE520 /* BUOperation.h */,
+				5BA29335142D237B000DE520 /* BUOperation.m */,
+				5BA29323142D16A6000DE520 /* BUVersion.h */,
+				5BA29324142D16A6000DE520 /* BUVersion.m */,
 			);
 			name = ConfigItems;
 			sourceTree = "<group>";
 		};
-		5BA2931D142D12A2000DE520 /* Actions */ = {
+		5BD3F39B142E2E5200CC7670 /* Launcher */ = {
 			isa = PBXGroup;
 			children = (
-				5BA29314142D10D4000DE520 /* BUBaseAction.h */,
-				5BA29315142D10D4000DE520 /* BUBaseAction.m */,
-				5BA29317142D121D000DE520 /* BUAllowAction.h */,
-				5BA29318142D121D000DE520 /* BUAllowAction.m */,
-				5BA2931A142D1242000DE520 /* BUDenyAction.h */,
-				5BA2931B142D1242000DE520 /* BUDenyAction.m */,
+				5BD3F397142E2DEB00CC7670 /* BUExecutableLauncher.h */,
+				5BD3F398142E2DEB00CC7670 /* BUExecutableLauncher.m */,
 			);
-			name = Actions;
+			name = Launcher;
 			sourceTree = "<group>";
 		};
-		5BA2931E142D1429000DE520 /* Operations */ = {
+		5BD3F39C142E525000CC7670 /* GUI */ = {
 			isa = PBXGroup;
 			children = (
-				5BA29334142D237B000DE520 /* BUBaseOperation.h */,
-				5BA29335142D237B000DE520 /* BUBaseOperation.m */,
-				5BA29327142D1915000DE520 /* BUDefaultOperation.h */,
-				5BA29328142D1915000DE520 /* BUDefaultOperation.m */,
+				5BD3F39D142E527A00CC7670 /* BUToolbarDelegate.h */,
+				5BD3F39E142E527A00CC7670 /* BUToolbarDelegate.m */,
 			);
-			name = Operations;
-			sourceTree = "<group>";
-		};
-		5BA2931F142D1430000DE520 /* Filters */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Filters;
-			sourceTree = "<group>";
-		};
-		5BA29320142D1436000DE520 /* Modifiers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Modifiers;
-			sourceTree = "<group>";
-		};
-		5BA29322142D166B000DE520 /* Versions */ = {
-			isa = PBXGroup;
-			children = (
-				5BA29323142D16A6000DE520 /* BUVersion.h */,
-				5BA29324142D16A6000DE520 /* BUVersion.m */,
-			);
-			name = Versions;
-			sourceTree = "<group>";
-		};
-		5BA2932E142D21BD000DE520 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				5BA29332142D2238000DE520 /* BUConfigItems.h */,
-				5BA29331142D2225000DE520 /* BUActions.h */,
-				5BA29330142D220E000DE520 /* BUOperations.h */,
-				5BA29333142D2258000DE520 /* BUVersions.h */,
-			);
-			name = Headers;
+			name = GUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,13 +244,12 @@
 			files = (
 				5B420357142CC42E00FB46AB /* main.m in Sources */,
 				5B42035E142CC42E00FB46AB /* BuckleUpAppDelegate.m in Sources */,
-				5BA29316142D10D4000DE520 /* BUBaseAction.m in Sources */,
-				5BA29319142D121D000DE520 /* BUAllowAction.m in Sources */,
-				5BA2931C142D1242000DE520 /* BUDenyAction.m in Sources */,
+				5BA29316142D10D4000DE520 /* BUAction.m in Sources */,
 				5BA29325142D16A6000DE520 /* BUVersion.m in Sources */,
-				5BA29329142D1915000DE520 /* BUDefaultOperation.m in Sources */,
 				5BA2932C142D19C0000DE520 /* BUSandboxConfig.m in Sources */,
-				5BA29336142D237B000DE520 /* BUBaseOperation.m in Sources */,
+				5BA29336142D237B000DE520 /* BUOperation.m in Sources */,
+				5BD3F399142E2DEB00CC7670 /* BUExecutableLauncher.m in Sources */,
+				5BD3F39F142E527A00CC7670 /* BUToolbarDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,11 +287,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -351,6 +306,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -359,17 +315,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;
