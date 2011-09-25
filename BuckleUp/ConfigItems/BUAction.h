@@ -1,5 +1,5 @@
 //
-//  BUVersion.h
+//  BUBaseAction.h
 //  BuckleUp
 //
 //  Copyright 2011 Martin Planer
@@ -19,15 +19,24 @@
 #import <Foundation/Foundation.h>
 
 #import "BUConfigItem.h"
+#import "BUAction.h"
+#import "BUOperation.h"
 
-// Define all possible operations
-extern NSString* const BUVersion1;
+// Define all allowed actions
+extern NSString* const BUActionAllow;
+extern NSString* const BUActionDeny;
 
-@interface BUVersion : NSObject<BUConfigItemProtocol>
+@interface BUAction : NSObject<BUConfigItemProtocol>
 {
-    @protected
-    NSString* version;
+    
+@protected 
+    
+    NSString* action;
+    BUOperation* operation;
 }
 
-+ (BUVersion*) version;
+- (id)initAction:(NSString*)actionType withOperation: (BUOperation*)op;
+
++ (BUAction*) action:(NSString*)action withOperation: (BUOperation*)op;
+
 @end

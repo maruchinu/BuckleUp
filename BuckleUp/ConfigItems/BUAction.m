@@ -1,5 +1,5 @@
 //
-//  BUVersion.m
+//  BUBaseAction.m
 //  BuckleUp
 //
 //  Copyright 2011 Martin Planer
@@ -16,18 +16,20 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 
-#import "BUVersion.h"
+#import "BUAction.h"
 
-// Define all possible operations
-NSString* const BUVersion1 = @"1";
+// Define all allowed actions
+NSString* const BUActionAllow = @"allow";
+NSString* const BUActionDeny = @"deny";
 
-@implementation BUVersion
+@implementation BUAction
 
-- (id)init
+- (id)initAction:(NSString*)actionType withOperation: (BUOperation*)op;
 {
     self = [super init];
     if (self) {
-        version = BUVersion1;
+        action = actionType;
+        operation = op;
     }
     
     return self;
@@ -36,17 +38,17 @@ NSString* const BUVersion1 = @"1";
 #pragma mark -
 #pragma mark BUConfigItemProtocol Methods
 
-- (NSString*) configString
+- (NSString *)configString
 {
-    return [NSString stringWithFormat:@"(version %@)", version];
+    return [NSString stringWithFormat:@"(%@ %@)", action, [operation configString]];
 }
 
 #pragma mark -
 #pragma mark Convenience Methods
 
-+ (BUVersion *)version
++ (BUAction *)action:(NSString *)action withOperation:(BUOperation *)op
 {
-    return [[[self alloc] init] autorelease];
+    return [[[self alloc] initAction:action withOperation:op] autorelease];
 }
 
 @end
