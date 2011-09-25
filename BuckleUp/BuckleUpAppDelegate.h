@@ -20,8 +20,23 @@
 
 @interface BuckleUpAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
+    
+    NSImageView* appIcon;
+    NSTextField* appName;
+    
+    NSString* appExecutable;
+    
+    IBOutlet NSButton* fileAllCheckbox;
+    IBOutlet NSButton* fileReadCheckbox;
+    IBOutlet NSButton* fileWriteCheckbox;
+    
+    IBOutlet NSButton* networkAllCheckbox;
+    IBOutlet NSButton* networkInboundCheckbox;
+    IBOutlet NSButton* networkOutboundCheckbox;
 }
 
 @property (assign) IBOutlet NSWindow *window;
+@property (nonatomic, retain) IBOutlet NSImageView *appIcon;
+@property (nonatomic, retain) IBOutlet NSTextField *appName;
 
 @end

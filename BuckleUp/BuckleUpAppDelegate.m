@@ -19,30 +19,123 @@
 #import "BuckleUpAppDelegate.h"
 
 #import "BUSandboxConfig.h"
-#import "BUConfigItems.h"
+#import "BUAction.h"
+#import "BUOperation.h"
+
+#import "BUExecutableLauncher.h"
+
+#import "BUToolbarDelegate.h"
 
 @implementation BuckleUpAppDelegate
 
 @synthesize window;
+@synthesize appIcon;
+@synthesize appName;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Test code below...
+
+    [[NSNotificationCenter defaultCenter] addObserver:self 
+                                             selector:@selector(launchClicked:) 
+                                                 name:BULaunchClickedNotification 
+                                               object:nil];
     
-    BUVersion* version = [[BUVersion alloc] init];
+    [[NSNotificationCenter defaultCenter] addObserver:self 
+                                             selector:@selector(createLauncherClicked:) 
+                                                 name:BUCreateLauncherClickedNotification 
+                                               object:nil];
     
-    BUSandboxConfig* config = [[BUSandboxConfig alloc] initWithVersion:version];
+    [self application:NSApp openFile:@"/Applications/Calculator.app"];
+}
+
+- (void) launchClicked: (NSNotification*)notification
+{
+    if(appExecutable == nil) {
+        NSLog(@"No executable specified yet!");
+        return;
+    }
     
-    BUDefaultOperation* defaultOperation = [[BUDefaultOperation alloc] init];
+    BUVersion* version = [BUVersion version];
+    BUSandboxConfig* config = [BUSandboxConfig configWithVersion:version];
     
-    BUAllowAction* allowAction = [[BUAllowAction alloc] initWithOperation:defaultOperation];
-    
+    BUOperation* defaultOperation = [BUOperation operation:BUOperationDefault];
+    BUAction* allowAction = [BUAction action:BUActionAllow withOperation:defaultOperation];
     [config addAction:allowAction];
     
-    NSLog(@"\n\n%@\n", [config configString]);
+    if([fileAllCheckbox state] == NSOnState)
+    {
+        BUOperation* op = [BUOperation operation:BUOperationFileAll];
+        BUAction* action = [BUAction action:BUActionDeny withOperation:op];
+        
+        [config addAction:action];
+    }
     
-    // Quit the application
-    [NSApp performSelector:@selector(terminate:) withObject:nil afterDelay:0.0];
+    if([fileReadCheckbox state] == NSOnState)
+    {
+        BUOperation* op = [BUOperation operation:BUOperationFileReadAll];
+        BUAction* action = [BUAction action:BUActionDeny withOperation:op];
+        
+        [config addAction:action];
+    }
+    
+    if([fileWriteCheckbox state] == NSOnState)
+    {
+        BUOperation* op = [BUOperation operation:BUOperationFileWriteAll];
+        BUAction* action = [BUAction action:BUActionDeny withOperation:op];
+        
+        [config addAction:action];
+    }
+    
+    if([networkAllCheckbox state] == NSOnState)
+    {
+        BUOperation* op = [BUOperation operation:BUOperationNetworkAll];
+        BUAction* action = [BUAction action:BUActionDeny withOperation:op];
+        
+        [config addAction:action];
+    }
+    
+    if([networkInboundCheckbox state] == NSOnState)
+    {
+        BUOperation* op = [BUOperation operation:BUOperationNetworkInbound];
+        BUAction* action = [BUAction action:BUActionDeny withOperation:op];
+        
+        [config addAction:action];
+    }
+    
+    if([networkOutboundCheckbox state] == NSOnState)
+    {
+        BUOperation* op = [BUOperation operation:BUOperationNetworkOutbound];
+        BUAction* action = [BUAction action:BUActionDeny withOperation:op];
+        
+        [config addAction:action];
+    }
+        
+    [BUExecutableLauncher launchExecutable:appExecutable withConfig:config];
+}
+
+- (void) createLauncherClicked: (NSNotification*)notification
+{
+    
+}
+
+- (BOOL)application:(NSApplication *)sender openFile:(NSString *)filename
+{
+    NSBundle* appBundle = [NSBundle bundleWithPath:filename];
+    
+    if(appBundle == nil) {
+        NSLog(@"Could not open %@ as bundle!\n", filename);
+        return NO;
+    }
+    
+    NSDictionary* bundleDict = [appBundle infoDictionary];
+    [appName setStringValue:[bundleDict objectForKey:(NSString*)kCFBundleNameKey]];
+    
+    NSImage* icon = [[NSWorkspace sharedWorkspace] iconForFile:filename];
+    [appIcon setImage:icon];
+    
+    appExecutable = [appBundle executablePath];
+
+    return YES;
 }
 
 @end
