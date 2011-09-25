@@ -18,7 +18,8 @@
 
 #import <Foundation/Foundation.h>
 
-#import "BUConfigItems.h"
+#import "BUVersion.h"
+#import "BUAction.h"
 
 @interface BUSandboxConfig : NSObject
 {
@@ -30,7 +31,7 @@
 
 - (NSString*) configString;
 
-- (void) addAction: (BUBaseAction<BUConfigItemProtocol>*)action;
+- (void) addAction: (BUAction<BUConfigItemProtocol>*)action;
 
 + (BUSandboxConfig*) configWithVersion: (BUVersion*)version;
 @end

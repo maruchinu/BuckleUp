@@ -32,7 +32,7 @@
     return self;
 }
 
-- (void) addAction: (BUBaseAction<BUConfigItemProtocol>*)action
+- (void) addAction: (BUAction<BUConfigItemProtocol>*)action
 {
     [actions addObject:action];
 }
